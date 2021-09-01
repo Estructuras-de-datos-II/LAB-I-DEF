@@ -61,6 +61,8 @@ namespace Laboratorio_1_EDII
                     bool si = arbol.existeValor(21);
                     bool no = arbol.existeValor(100);
 
+                    var arbolM = new BTree<Models.Movies>(5);
+
 
 
                 });
