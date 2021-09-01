@@ -63,6 +63,37 @@ namespace Laboratorio_1_EDII
 
                     var arbolM = new BTree<Models.Movies>(5);
 
+                    Models.Movies movie1 = new Models.Movies();
+                    movie1.id = 10001;
+                    movie1.director = "Tarantino";
+                    movie1.ratingIMBD = 8.2F;
+                    movie1.genero = "suspenso";
+                    DateTime hoy = new DateTime();
+                    
+                    movie1.lanzamiento =hoy;
+                    movie1.ratingRottenTomatoes = 10;
+                    movie1.titulo = "Pulp Fiction";
+
+                    Models.Movies movie2 = new Models.Movies();
+                    movie2.id = 1000;
+                    movie2.director = "Allion";
+                    movie2.ratingIMBD = 6.3F;
+                    movie2.genero = "terror";
+                    DateTime ayer = new DateTime();
+
+                    movie2.lanzamiento = ayer;
+                    movie2.ratingRottenTomatoes = 7;
+                    movie2.titulo = "Californication";
+
+
+
+
+                    arbolM.insertar(movie1);
+                    arbolM.insertar(movie2);
+
+
+
+
 
 
                 });

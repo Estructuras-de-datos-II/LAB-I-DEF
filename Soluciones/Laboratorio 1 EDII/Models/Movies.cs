@@ -7,6 +7,7 @@ namespace Laboratorio_1_EDII.Models
 {
     public class Movies : IComparable
     {
+        public int id { get; set; }
         public string director { get; set; }
         public float ratingIMBD { get; set; }
         public string genero { get; set; }
@@ -14,10 +15,10 @@ namespace Laboratorio_1_EDII.Models
         public int ratingRottenTomatoes { get; set; }
         public string titulo { get; set; }
 
-        public int CompareTo(object obj)
+        public int CompareTo(object? obj)
         {
-            if (obj == null) return 0;
-            else return 0;
+            Movies value = (Movies)obj;
+            return id.CompareTo(value.id);
 
         }
     }
