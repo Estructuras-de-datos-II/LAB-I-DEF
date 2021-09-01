@@ -1,0 +1,9 @@
+C:\Users\Carlos Laparra\Documents\Cuarto ciclo\Estructuras de datos LAB\Soluciones\Libreria ED II\bin\Debug\netstandard2.0\Libreria_ED_II.deps.json
+C:\Users\Carlos Laparra\Documents\Cuarto ciclo\Estructuras de datos LAB\Soluciones\Libreria ED II\bin\Debug\netstandard2.0\Libreria_ED_II.dll
+C:\Users\Carlos Laparra\Documents\Cuarto ciclo\Estructuras de datos LAB\Soluciones\Libreria ED II\bin\Debug\netstandard2.0\Libreria_ED_II.pdb
+C:\Users\Carlos Laparra\Documents\Cuarto ciclo\Estructuras de datos LAB\Soluciones\Libreria ED II\obj\Debug\netstandard2.0\Libreria_ED_II.AssemblyInfoInputs.cache
+C:\Users\Carlos Laparra\Documents\Cuarto ciclo\Estructuras de datos LAB\Soluciones\Libreria ED II\obj\Debug\netstandard2.0\Libreria_ED_II.AssemblyInfo.cs
+C:\Users\Carlos Laparra\Documents\Cuarto ciclo\Estructuras de datos LAB\Soluciones\Libreria ED II\obj\Debug\netstandard2.0\Libreria_ED_II.csproj.CoreCompileInputs.cache
+C:\Users\Carlos Laparra\Documents\Cuarto ciclo\Estructuras de datos LAB\Soluciones\Libreria ED II\obj\Debug\netstandard2.0\Libreria_ED_II.dll
+C:\Users\Carlos Laparra\Documents\Cuarto ciclo\Estructuras de datos LAB\Soluciones\Libreria ED II\obj\Debug\netstandard2.0\Libreria_ED_II.pdb
+C:\Users\Carlos Laparra\Documents\Cuarto ciclo\Estructuras de datos LAB\Soluciones\Libreria ED II\obj\Debug\netstandard2.0\Libreria_ED_II.csprojAssemblyReference.cache
