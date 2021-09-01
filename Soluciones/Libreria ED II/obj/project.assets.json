@@ -186,11 +186,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Carlos Laparra\\Documents\\Cuarto ciclo\\Estructuras de datos LAB\\Soluciones\\Libreria ED II\\Libreria_ED_II.csproj",
+      "projectUniqueName": "C:\\Users\\Carlos Laparra\\Documents\\Cuarto ciclo\\Estructuras de datos LAB\\Soluciones\\LAB-I-DEF\\Soluciones\\Libreria ED II\\Libreria_ED_II.csproj",
       "projectName": "Libreria_ED_II",
-      "projectPath": "C:\\Users\\Carlos Laparra\\Documents\\Cuarto ciclo\\Estructuras de datos LAB\\Soluciones\\Libreria ED II\\Libreria_ED_II.csproj",
+      "projectPath": "C:\\Users\\Carlos Laparra\\Documents\\Cuarto ciclo\\Estructuras de datos LAB\\Soluciones\\LAB-I-DEF\\Soluciones\\Libreria ED II\\Libreria_ED_II.csproj",
       "packagesPath": "C:\\Users\\Carlos Laparra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Carlos Laparra\\Documents\\Cuarto ciclo\\Estructuras de datos LAB\\Soluciones\\Libreria ED II\\obj\\",
+      "outputPath": "C:\\Users\\Carlos Laparra\\Documents\\Cuarto ciclo\\Estructuras de datos LAB\\Soluciones\\LAB-I-DEF\\Soluciones\\Libreria ED II\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
