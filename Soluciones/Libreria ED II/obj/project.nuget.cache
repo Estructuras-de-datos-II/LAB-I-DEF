@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "docBeDaZ+d96n60UMgUi0MJ8FB7ABwMhVPwu5crblQ/ruL4hx4WBtO3B+dUUD3D0PeSQsw5Fda4g14RaABbVyA==",
+  "dgSpecHash": "I8JrqgrDRM9bXkJddoJ5Cev8JkwTpvSYwbNHyP13Wwzqkl4WKHa5sMAhhgGI9kczRPIrlICE22eJRdtsS30i1A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Carlos Laparra\\Documents\\Cuarto ciclo\\Estructuras de datos LAB\\Soluciones\\LAB-I-DEF\\Soluciones\\Libreria ED II\\Libreria_ED_II.csproj",
+  "projectFilePath": "E:\\Documentos\\Github\\LAB-I-DEF\\Soluciones\\Libreria ED II\\Libreria_ED_II.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Carlos Laparra\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Carlos Laparra\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\marti\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\marti\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

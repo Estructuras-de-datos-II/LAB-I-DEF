@@ -16,3 +16,13 @@ C:\Users\Carlos Laparra\Documents\Cuarto ciclo\Estructuras de datos LAB\Solucion
 C:\Users\Carlos Laparra\Documents\Cuarto ciclo\Estructuras de datos LAB\Soluciones\LAB-I-DEF\Soluciones\Libreria ED II\obj\Debug\netstandard2.0\Libreria_ED_II.csproj.CoreCompileInputs.cache
 C:\Users\Carlos Laparra\Documents\Cuarto ciclo\Estructuras de datos LAB\Soluciones\LAB-I-DEF\Soluciones\Libreria ED II\obj\Debug\netstandard2.0\Libreria_ED_II.dll
 C:\Users\Carlos Laparra\Documents\Cuarto ciclo\Estructuras de datos LAB\Soluciones\LAB-I-DEF\Soluciones\Libreria ED II\obj\Debug\netstandard2.0\Libreria_ED_II.pdb
+E:\Documentos\Github\LAB-I-DEF\Soluciones\Libreria ED II\bin\Debug\netstandard2.0\Libreria_ED_II.deps.json
+E:\Documentos\Github\LAB-I-DEF\Soluciones\Libreria ED II\bin\Debug\netstandard2.0\Libreria_ED_II.dll
+E:\Documentos\Github\LAB-I-DEF\Soluciones\Libreria ED II\bin\Debug\netstandard2.0\Libreria_ED_II.pdb
+E:\Documentos\Github\LAB-I-DEF\Soluciones\Libreria ED II\obj\Debug\netstandard2.0\Libreria_ED_II.csproj.AssemblyReference.cache
+E:\Documentos\Github\LAB-I-DEF\Soluciones\Libreria ED II\obj\Debug\netstandard2.0\Libreria_ED_II.GeneratedMSBuildEditorConfig.editorconfig
+E:\Documentos\Github\LAB-I-DEF\Soluciones\Libreria ED II\obj\Debug\netstandard2.0\Libreria_ED_II.AssemblyInfoInputs.cache
+E:\Documentos\Github\LAB-I-DEF\Soluciones\Libreria ED II\obj\Debug\netstandard2.0\Libreria_ED_II.AssemblyInfo.cs
+E:\Documentos\Github\LAB-I-DEF\Soluciones\Libreria ED II\obj\Debug\netstandard2.0\Libreria_ED_II.csproj.CoreCompileInputs.cache
+E:\Documentos\Github\LAB-I-DEF\Soluciones\Libreria ED II\obj\Debug\netstandard2.0\Libreria_ED_II.dll
+E:\Documentos\Github\LAB-I-DEF\Soluciones\Libreria ED II\obj\Debug\netstandard2.0\Libreria_ED_II.pdb

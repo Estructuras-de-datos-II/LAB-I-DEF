@@ -95,7 +95,7 @@ namespace Laboratorio_1_EDII
 
 
 
-
+                    webBuilder.UseStartup<Startup>();
                 });
     }
 }
