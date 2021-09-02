@@ -21,6 +21,8 @@ namespace Laboratorio_1_EDII.Controllers
             return new string[] { "value1", "value2" };
         }
 
+
+
         // GET api/<MoviesController>/5
         [HttpGet("{titulo}")]
         public ActionResult getByString([FromRoute] string Titulo)
@@ -30,20 +32,48 @@ namespace Laboratorio_1_EDII.Controllers
             return Ok(result);
         
         }
+        // DELETE api/<MoviesController>
+        [HttpDelete]
+        public ActionResult Delete()
+        {
+            Singleton.Instance.Movie.Clear();
+            
+            return NoContent();
+        }
+        //// POST api/<MoviesController>
+        //[HttpPost]
+        //public ActionResult Post([FromBody] Movies newValue)
+        //{
+        //    try
+        //    {
+        //        var result = Singleton.Instance.Movie.Where(x => x.titulo == newValue.titulo).FirstOrDefault<Movies>();
+        //        if (result != null) return BadRequest();
+
+        //        newValue.id = Singleton.Instance.LastId + 1;
+        //        Singleton.Instance.Movie.Add(newValue);
+        //        Singleton.Instance.LastId++;
+        //        return Created("", newValue);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return BadRequest();
+        //    }
+        //}
 
         // POST api/<MoviesController>
         [HttpPost]
-        public ActionResult Post([FromBody] Movies newValue)
+        public ActionResult Post([FromBody] Order newValue)
         {
             try
             {
-                var result = Singleton.Instance.Movie.Where(x => x.titulo == newValue.titulo).FirstOrDefault<Movies>();
-                if (result != null) return BadRequest();
+                if (Convert.ToInt32(newValue.Orders) % 2 != 0)
+                    Singleton.Instance.Orders = Convert.ToInt32(newValue.Orders);
 
-                newValue.id = Singleton.Instance.LastId + 1;
-                Singleton.Instance.Movie.Add(newValue);
-                Singleton.Instance.LastId++;
-                return Created("", newValue);
+               
+                else {
+                    return BadRequest();
+                }
+                return Ok();
             }
             catch (Exception ex)
             {
@@ -51,16 +81,24 @@ namespace Laboratorio_1_EDII.Controllers
             }
         }
 
-        // PUT api/<MoviesController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
+        //// DELETE api/<MoviesController>/5
+        //[HttpDelete("{titulo}")]
+        //public ActionResult Delete(string Titulo)
+        //{
+        //    var result = Singleton.Instance.Movie.Where(x => x.titulo == Titulo).FirstOrDefault<Movies>();
+        //    if (result == null) return NotFound();
+        //    Singleton.Instance.Movie.RemoveAll(x => x.titulo == Titulo);
+        //    return NoContent();
+        //}
 
-        // DELETE api/<MoviesController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+
+
+        // POST api/<MoviesController/populate>
+
+        //[HttpPost("populate")]
+        //public async Task<ActionResult> Create([FromForm] IFormFile file)
+        //{
+        //
+        //}
     }
 }
