@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Laboratorio_1_EDII.Models;
 
+
 namespace Laboratorio_1_EDII.Data
 {
     public sealed class Singleton
@@ -11,12 +12,14 @@ namespace Laboratorio_1_EDII.Data
         private readonly static Singleton _instance = new Singleton();
         public List<Movies> Movie { get; set; }
         public int LastId = 0;
-        public int Orders = 3;
+        public int Orders = 5;
+        
+
         private Singleton()
         {
                 Movie = new List<Movies>();
-             
-               
+                //public BTree<Models.Movies> = new BTree<Models.Movies>(Singleton.Instance.Orders);
+
         }
 
         public static Singleton Instance
