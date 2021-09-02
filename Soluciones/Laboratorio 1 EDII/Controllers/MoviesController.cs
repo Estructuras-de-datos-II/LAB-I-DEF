@@ -86,12 +86,17 @@ namespace Laboratorio_1_EDII.Controllers
         // POST api/<MoviesController/populate>
 
         [HttpPost("populate")]
-        public async Task<ActionResult> Create([FromForm] IFormFile file)
+        public async Task<ActionResult> Create([FromForm] ICollection<IFormFile> file)
         {
             try
             {
-
-                return BadRequest();
+                foreach (Movies item in file)
+                {
+                    item.id = Singleton.Instance.LastId + 1;
+                    Singleton.Instance.LastId++;
+                    Singleton.Instance.arbolB.insertar(item);
+                }
+                return Created("", file);
             }
             catch (Exception ex)
             {
