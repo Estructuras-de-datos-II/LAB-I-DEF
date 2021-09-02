@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Laboratorio_1_EDII.Models;
 
+
 namespace Laboratorio_1_EDII.Data
 {
     public sealed class Singleton
