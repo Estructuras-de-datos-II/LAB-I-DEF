@@ -7,6 +7,10 @@ using System.IO;
 using System.Threading.Tasks;
 using Laboratorio_1_EDII.Models;
 using Laboratorio_1_EDII.Data;
+using System.Text;
+using System;
+using Newtonsoft.Json;
+
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -86,11 +90,15 @@ namespace Laboratorio_1_EDII.Controllers
         // POST api/<MoviesController/populate>
 
         [HttpPost("populate")]
-        public async Task<ActionResult> Create([FromForm] ICollection<IFormFile> file)
+        public  IActionResult PostFile([FromForm] IFormFile file)
         {
+            using var archivojason = new MemoryStream();
             try
             {
-                foreach (Movies item in file)
+                file.CopyToAsync(archivojason);
+                var pelicula = Encoding.ASCII.GetString(archivojason.ToArray());
+                var movieslist = JsonConvert.DeserializeObject<List<Movies>>(pelicula);
+                foreach (Movies item in movieslist)
                 {
                     item.id = Singleton.Instance.LastId + 1;
                     Singleton.Instance.LastId++;
