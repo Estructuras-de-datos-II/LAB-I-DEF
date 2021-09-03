@@ -104,7 +104,7 @@ namespace Laboratorio_1_EDII.Controllers
                     Singleton.Instance.LastId++;
                     Singleton.Instance.arbolB.insertar(item);
                 }
-                return Created("", file);
+                return Ok();
             }
             catch (Exception ex)
             {
