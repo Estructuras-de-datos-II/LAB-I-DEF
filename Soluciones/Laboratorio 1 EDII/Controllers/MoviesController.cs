@@ -113,6 +113,46 @@ namespace Laboratorio_1_EDII.Controllers
 
         }
 
+        //// POST api/<MoviesController/populate/id>
+
+        //[HttpPost("populate/{id}")]
+        //public IActionResult Delete([FromRoute] string id)
+        //{
+
+        //    try
+        //    {
+        //        Movies eliminarid = new Movies();
+        //        eliminarid.id = Convert.ToInt32(id);
+
+        //        if(Singleton.Instance.arbolB.eliminar(eliminarid))
+        //        {
+        //            return Ok();
+        //        }
+
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return BadRequest();
+        //    }
+
+        //}
+
+        // POST api/<MoviesController/populate/id>
+        [HttpDelete("populate/{id}")]
+        public ActionResult Delete(string id)
+        {
+            try { 
+            Movies eliminarid = new Movies();
+            eliminarid.id = Convert.ToInt32(id);
+            Singleton.Instance.arbolB.eliminar(eliminarid);
+            return Ok();
+            }
+            catch(Exception ex)
+            {
+                return BadRequest();
+            }
+        }
+
         // POST api/<MoviesController/import>
         [HttpPost("import")]
         public ActionResult Post([FromBody] List<Movies> newListValue)
@@ -134,5 +174,18 @@ namespace Laboratorio_1_EDII.Controllers
                 return BadRequest();
             }
         }
+
+
+        // PARA BORRAR EN EL IMPORT
+
+        ////POST api/<MoviesController/import/id>
+        ////[HttpDelete("import/{id}")]
+        ////public ActionResult Delete(string id)
+        ////{
+        ////    Movies eliminarid = new Movies();
+        ////    eliminarid.id = Convert.ToInt32(id);
+        ////    Singleton.Instance.arbolB.eliminar(eliminarid);
+        ////    return Ok();
+        ////}
     }
 }
