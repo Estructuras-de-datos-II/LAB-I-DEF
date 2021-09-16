@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 
 
@@ -48,12 +51,28 @@ namespace Consola_Prueba
             arbol.eliminar(46);
 
 
+
             bool si = arbol.existeValor(21);
             bool no = arbol.existeValor(100);
+            rutaE obt = new rutaE();
+            List<rutaE> rutalol = new List<rutaE>();
+
+            arbol.busqueda(arbol.ruta, 21, ref obt.numerosEncontrados);
+
+            
+
+            arbol.resetear(ref arbol);
 
 
 
 
         }
+    }
+    public class rutaE
+    {
+        public string rutaSeleccionada { get; set; }
+        public List<int> numerosEncontrados = new List<int>();
+        public bool encontroValorB { get; set; }
+        public string encontroValorS { get; set; }
     }
 }

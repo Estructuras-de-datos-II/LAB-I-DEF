@@ -5,10 +5,10 @@ using System.Linq;
 
 public class BTree<T> : IEnumerable<T> where T : IComparable
 {
-    private readonly int maxCantLlaves;
-    private readonly int minCantLlaves;
+    public int maxCantLlaves;
+    public int minCantLlaves;
 
-    internal BTreeNode<T> ruta;
+    public BTreeNode<T> ruta;
 
     public int contador { get; private set; }
 
@@ -70,6 +70,51 @@ public class BTree<T> : IEnumerable<T> where T : IComparable
         return null;
     }
 
+    public void busqueda(BTreeNode<T> node, T valor,ref List<T> numerosEncontrados)
+    {
+        int contT = 0;
+        //si demuestra que es una hoja entonces insertara
+        if (node.comprobarHoja)
+        {
+            for (var i = 0; i < node.contadorDeLlaves; i++)
+            {
+
+                if (valor.CompareTo(node.llaves[i]) == 0)
+                {                    
+                    numerosEncontrados.Add(node.llaves[i]);
+                    contT++;
+                }
+            }
+        }
+        else
+        {
+            //si no es una hoja, llevar hasta una
+            for (var i = 0; i < node.contadorDeLlaves; i++)
+            {
+                if (valor.CompareTo(node.llaves[i]) == 0)
+                {
+                    numerosEncontrados.Add(node.llaves[i]);
+                    contT++;
+                }
+
+                //valor actual < valor nuevo , enviar hijo izquierdo
+                if (valor.CompareTo(node.llaves[i]) < 0)
+                {
+                    numerosEncontrados.Add(node.llaves[i]);
+                    contT++;
+                    busqueda(node.hijo[i + 1], valor, ref numerosEncontrados);
+                }
+                //valor actual > valor nuevo, valor actual es el último                
+                if (node.contadorDeLlaves == i + 1)
+                {
+                    numerosEncontrados.Add(node.llaves[i]);
+                    contT++;
+                    busqueda(node.hijo[i + 1], valor,ref numerosEncontrados);
+                }
+            }
+
+        }        
+    }
     public void insertar(T valorNuevo)
     {
         if (ruta == null)
@@ -83,11 +128,10 @@ public class BTree<T> : IEnumerable<T> where T : IComparable
         var hojaInsertar = encontrarHojaInsercion(ruta, valorNuevo);
         insertarSeparar(ref hojaInsertar, valorNuevo, null, null);
         contador++;
-    }
+    }   
 
-
-    //encontrar la hoja para iniciar la inserción
-    private BTreeNode<T> encontrarHojaInsercion(BTreeNode<T> node, T valorNuevo)
+//encontrar la hoja para iniciar la inserción
+private BTreeNode<T> encontrarHojaInsercion(BTreeNode<T> node, T valorNuevo)
     {
         //si es hoja se inserta
         if (node.comprobarHoja)
@@ -570,6 +614,13 @@ public class BTree<T> : IEnumerable<T> where T : IComparable
         Array.Copy(array, indice + 1, array, indice, array.Length - indice - 1);
     }
 
+    public void resetear(ref BTree<T> arbol)
+    {
+        arbol.ruta = null;
+        arbol.contador = 0;
+        arbol.maxCantLlaves = 0;
+        arbol.minCantLlaves = 0;
+    }
     IEnumerator IEnumerable.GetEnumerator()
     {
         return GetEnumerator();
@@ -582,7 +633,7 @@ public class BTree<T> : IEnumerable<T> where T : IComparable
 
 }
 
-internal abstract class BNode<T> where T : IComparable
+public abstract class BNode<T> where T : IComparable
 {
     internal int indice;
 
@@ -603,7 +654,7 @@ internal abstract class BNode<T> where T : IComparable
     }
 }
 
-internal class BTreeNode<T> : BNode<T> where T : IComparable
+public class BTreeNode<T> : BNode<T> where T : IComparable
 {
 
     internal BTreeNode<T> raiz { get; set; }
@@ -631,12 +682,12 @@ internal class BTreeNode<T> : BNode<T> where T : IComparable
     }
 }
 
-internal class BTreeEnumerator<T> : IEnumerator<T> where T : IComparable
+public class BTreeEnumerator<T> : IEnumerator<T> where T : IComparable
 {
-    private readonly BTreeNode<T> ruta;
-    private Stack<BTreeNode<T>> progreso;
+    private  BTreeNode<T> ruta;
+    public Stack<BTreeNode<T>> progreso;
 
-    private BTreeNode<T> current;
+    public BTreeNode<T> current;
     private int indice;
 
     internal BTreeEnumerator(BTreeNode<T> ruta)

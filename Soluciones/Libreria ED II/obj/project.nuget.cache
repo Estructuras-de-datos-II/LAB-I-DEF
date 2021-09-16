@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "I8JrqgrDRM9bXkJddoJ5Cev8JkwTpvSYwbNHyP13Wwzqkl4WKHa5sMAhhgGI9kczRPIrlICE22eJRdtsS30i1A==",
+  "dgSpecHash": "dV8v0Qt5yTwNOATuILfhK3fi8QENa3lef2QH1ROwahBXIrnqYGuhzYc6r9UqY49IXavhdThAnuMzDdShhb8XnA==",
   "success": true,
-  "projectFilePath": "E:\\Documentos\\Github\\LAB-I-DEF\\Soluciones\\Libreria ED II\\Libreria_ED_II.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\marti\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\marti\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\Carlos Laparra\\Documents\\Cuarto ciclo\\Estructuras de datos LAB\\Soluciones\\LAB-I-DEF\\Soluciones\\Libreria ED II\\Libreria_ED_II.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

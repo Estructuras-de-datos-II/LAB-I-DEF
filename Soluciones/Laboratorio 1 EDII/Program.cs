@@ -57,6 +57,8 @@ namespace Laboratorio_1_EDII
                     arbol.eliminar(90);
                     arbol.eliminar(46);
 
+                    
+
 
                     bool si = arbol.existeValor(21);
                     bool no = arbol.existeValor(100);
